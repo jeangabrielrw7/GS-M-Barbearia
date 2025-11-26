@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Barbearia [Nome da Barbearia]</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo"><a href="index.html">GS´M Barbearia</a></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="contato.html" class="active">Contato</a></li>
+                    <li><a href="ambiente.html">Ambiente</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Contato e Agendamento</h1>
+            <p class="subtitle">Estamos esperando por você! Entre em contato ou venha nos visitar.</p>
+
+            <div class="contact-details">
+                <div style="padding: 20px;">
+                    <h2>Informações</h2>
+                    <p><strong>Endereço:</strong> Colônia Agrícola, St. Hab. Vicente Pires Rua 5 Lote 6A, Brasília - DF,</p>
+                    <p><strong>Telefone:</strong> <a href="tel:+55XX9XXXXXXXX">(61) 99933-6532</a></p>
+                    <p><strong>Horário:</strong> Ter a Sáb, das 9h às 19h</p>
+                </div>
+                <div>
+                    <h2>Localização</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15356.003445373486!2d-48.03664991284179!3d-15.803908600000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a33bc5b7a3fe5%3A0xd94cfcccf227f8fc!2sGSM&#39;s%20Barbearia!5e0!3m2!1spt-BR!2sbr!4v1764125492896!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <form action="#" method="POST">
+                <h2>Agende seu Horário ou Envie uma Mensagem</h2>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="service">Serviço Desejado:</label>
+                <select id="service" name="service">
+                    <option value="corte">Corte de Cabelo</option>
+                    <option value="barba">Barba (Ritual Completo)</option>
+                    <option value="combo">Combo (Corte + Barba)</option>
+                    <option value="outro">Outro</option>
+                </select>
+
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="5"></textarea>
+
+                <button type="submit" class="cta-button">Enviar</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 GS´M Barbearia | Desenvolvido por Jean Gabriel Rodrigues Miranda, Mateus Campos Andrade, Emanuely de Sousa Soares - Instituição UCB</p>
+    </footer>
+</body>
+</html>
