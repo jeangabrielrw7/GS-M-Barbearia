@@ -26,47 +26,23 @@
         <div class="container">
             <h1>Nosso Ambiente</h1>
             <p class="subtitle">Conheça o espaço da GS´M Barbearia. Um lugar pensado para o seu conforto e estilo.</p>
-            <div class="carousel">
-                <div class="carousel-images">
-                    <img src="galeria1.jpg" alt="">
-                    <img src="galeria2.jpg" alt="">
-                    <img src="galeria3.jpg" alt="">
-                    <img src="galeria4.jpg" alt="">
-                    <img src="galeria5.jpg" alt="">
-                    <img src="galeria6.jpg" alt="">
-                    <img src="galeria7.jpg" alt="">
-                    <img src="galeria8.jpg" alt="">
-                    <img src="galeria9.jpg" alt="">
-                </div>
 
-                <button class="prev">&#10094;</button>
-                <button class="next">&#10095;</button>
+            <div class="gallery-grid">
+                <img src="galeria6.jpg" alt="Corte de Cabelo 1">
+                <img src="galeria7.jpg" alt="Barba Desenhada 1">
+                <img src="galeria8.jpg" alt="Corte Fade 1">
+                <img src="galeria9.jpg" alt="Corte de Cabelo 2">
+                <img src="galeria5.jpg" alt="Barba Desenhada 2">
+                <img src="galeria1.jpg" alt="Corte Clássico 1">
+                <img src="galeria2.jpg" alt="Corte de Cabelo 3">
+                <img src="galeria3.jpg" alt="Barba Desenhada 3">
+                <img src="galeria4.jpg" alt="Corte Moderno 1">
             </div>
         </div>
     </main>
 
     <footer>
-        <p>&copy; 2025 GS´M Barbearia | Desenvolvido por Jean Gabriel Rodrigues Miranda, 
-        Mateus Campos Andrade, Emanuely de Sousa Soares - Instituição UCB</p>
+        <p>&copy; 2025 GS´M Barbearia | Desenvolvido por Jean Gabriel Rodrigues Miranda, Mateus Campos Andrade, Emanuely de Sousa Soares - Instituição UCB</p>
     </footer>
-    <script>
-        let currentIndex = 0;
-        const images = document.querySelector('.carousel-images');
-        const totalImages = images.children.length;
-
-        document.querySelector('.next').addEventListener('click', () => {
-            currentIndex = (currentIndex + 1) % totalImages;
-            updateCarousel();
-        });
-
-        document.querySelector('.prev').addEventListener('click', () => {
-            currentIndex = (currentIndex - 1 + totalImages) % totalImages;
-            updateCarousel();
-        });
-
-        function updateCarousel() {
-            images.style.transform = `translateX(-${currentIndex * 100}%)`;
-        }
-    </script>
 </body>
 </html>
